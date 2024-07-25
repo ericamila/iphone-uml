@@ -19,18 +19,21 @@
 ```mermaid
 classDiagram
     class Ipod {
+        <<Interface>> Ipod
         +tocar()
         +pausar()
         +selecionarMusica(String musica)
     }
 
     class Telefone {
+        <<Interface>> Telefone
         +ligar(String numero)
         +atender()
         +iniciarCorreioVoz()
     }
 
     class Navegador {
+        <<Interface>> Navegador
         +exibirPagina(String url)
         +adicionarNovaAba()
         +atualizarPagina()
