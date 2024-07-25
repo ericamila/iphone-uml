@@ -18,11 +18,17 @@
 
 ```mermaid
 classDiagram
+    class Shape{
+        <<interface>>
+        noOfVertices
+        draw()
+    }
+    
     class Ipod {
-        <<Interface>> Ipod
-        +tocar()
-        +pausar()
-        +selecionarMusica(String musica)
+        <<Interface>>
+        tocar()
+        pausar()
+        selecionarMusica(String musica)
     }
 
     class Telefone {
